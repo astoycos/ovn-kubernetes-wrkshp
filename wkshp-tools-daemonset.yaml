@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ovn-kubernetes-wkshp-tools
+  labels:
+    app: wkshp-tools
+spec:
+  selector:
+      matchLabels:
+        app: wkshp-tools
+  template:
+    metadata:
+      labels:
+        app: wkshp-tools
+    spec:
+      containers:
+      - name: tools
+        image: centos/tools:latest
+        command: ["/bin/sleep", "3650d"]
+      hostNetwork: true

@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  name: ovn-kubernetes-wkshp-client
+  labels:
+    app: webserver-agnhost-client
+spec:
+  selector:
+      matchLabels:
+        app: webserver-agnhost-client
+  template:
+    metadata:
+      labels:
+        app: webserver-agnhost-client
+    spec:
+      containers:
+      - name: client-agnhost
+        image: k8s.gcr.io/e2e-test-images/agnhost:2.26
+        args: ["netexec", "--http-port=8080"]
+        ports:
+        - containerPort: 8080
+          protocol: TCP
+      - name: tools
+        image: centos/tools:latest
+        command: ["/bin/sleep", "3650d"]
