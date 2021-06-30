@@ -1,0 +1,41 @@
+[root@ovn-control-plane ~]# ovn-sbctl show
+Chassis "44e1e001-d949-4c71-a75a-8855ff5e9081"
+    hostname: ovn-worker2
+    Encap geneve
+        ip: "172.18.0.3"
+        options: {csum="true"}
+    Port_Binding local-path-storage_local-path-provisioner-78776bfc44-d2cgb
+    Port_Binding k8s-ovn-worker2
+    Port_Binding default_ovn-kubernetes-wkshp-client-5js96
+    Port_Binding kube-system_coredns-74ff55c5b-8t24z
+    Port_Binding jtor-GR_ovn-worker2
+    Port_Binding rtoj-GR_ovn-worker2
+    Port_Binding etor-GR_ovn-worker2
+    Port_Binding default_ovn-kubernetes-wkshp-server-xq8tv
+    Port_Binding rtoe-GR_ovn-worker2
+Chassis "56241a2a-f1a6-46b0-9498-797340135af9"
+    hostname: ovn-control-plane
+    Encap geneve
+        ip: "172.18.0.4"
+        options: {csum="true"}
+    Port_Binding jtor-GR_ovn-control-plane
+    Port_Binding rtoj-GR_ovn-control-plane
+    Port_Binding cr-rtos-node_local_switch
+    Port_Binding default_ovn-kubernetes-wkshp-client-jmv8s
+    Port_Binding etor-GR_ovn-control-plane
+    Port_Binding k8s-ovn-control-plane
+    Port_Binding rtoe-GR_ovn-control-plane
+    Port_Binding default_ovn-kubernetes-wkshp-server-mj5w6
+Chassis "ae47224b-d282-4b3c-b3ea-bc77d7f4e556"
+    hostname: ovn-worker
+    Encap geneve
+        ip: "172.18.0.2"
+        options: {csum="true"}
+    Port_Binding k8s-ovn-worker
+    Port_Binding etor-GR_ovn-worker
+    Port_Binding rtoj-GR_ovn-worker
+    Port_Binding rtoe-GR_ovn-worker
+    Port_Binding jtor-GR_ovn-worker
+    Port_Binding default_ovn-kubernetes-wkshp-server-bjchm
+    Port_Binding kube-system_coredns-74ff55c5b-b975d
+    Port_Binding default_ovn-kubernetes-wkshp-client-89jwt
