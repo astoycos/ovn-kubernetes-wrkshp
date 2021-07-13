@@ -1,0 +1,13 @@
+OFPST_PORT_DESC reply (xid=0x2):
+ 1(ovn-k8s-gw0): addr:0a:58:a9:fe:00:01
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 2(patch-lnet-node): addr:52:c3:f7:b6:de:67
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ LOCAL(br-local): addr:62:95:c7:b7:8f:4e
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
