@@ -1,0 +1,36 @@
+Chassis "80e3c007-92d3-40cf-b73c-9a9a816f19aa"
+    hostname: ovn-worker2
+    Encap geneve
+        ip: "172.18.0.3"
+        options: {csum="true"}
+    Port_Binding kube-system_coredns-74ff55c5b-cr2pg
+    Port_Binding rtoe-GR_ovn-worker2
+    Port_Binding etor-GR_ovn-worker2
+    Port_Binding jtor-GR_ovn-worker2
+    Port_Binding k8s-ovn-worker2
+    Port_Binding rtoj-GR_ovn-worker2
+    Port_Binding default_server-on-ovn-worker2
+Chassis "41fdf088-bd55-4861-b653-aafae9bc9172"
+    hostname: ovn-control-plane
+    Encap geneve
+        ip: "172.18.0.4"
+        options: {csum="true"}
+    Port_Binding rtoj-GR_ovn-control-plane
+    Port_Binding rtoe-GR_ovn-control-plane
+    Port_Binding jtor-GR_ovn-control-plane
+    Port_Binding k8s-ovn-control-plane
+    Port_Binding etor-GR_ovn-control-plane
+Chassis "1954e8fa-8f57-485d-a79c-92986033ae7f"
+    hostname: ovn-worker
+    Encap geneve
+        ip: "172.18.0.2"
+        options: {csum="true"}
+    Port_Binding kube-system_coredns-74ff55c5b-rgsfz
+    Port_Binding local-path-storage_local-path-provisioner-78776bfc44-h68s6
+    Port_Binding default_server-on-ovn-worker
+    Port_Binding default_client-on-ovn-worker
+    Port_Binding etor-GR_ovn-worker
+    Port_Binding jtor-GR_ovn-worker
+    Port_Binding k8s-ovn-worker
+    Port_Binding rtoj-GR_ovn-worker
+    Port_Binding rtoe-GR_ovn-worker

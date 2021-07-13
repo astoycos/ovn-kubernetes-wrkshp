@@ -1,0 +1,41 @@
+3240e214-1187-4fc3-9c17-fdedfbb17895
+    Bridge breth0
+        fail_mode: standalone
+        Port breth0
+            Interface breth0
+                type: internal
+        Port eth0
+            Interface eth0
+        Port patch-breth0_ovn-worker-to-br-int
+            Interface patch-breth0_ovn-worker-to-br-int
+                type: patch
+                options: {peer=patch-br-int-to-breth0_ovn-worker}
+    Bridge br-int
+        fail_mode: secure
+        Port db7fc085f0549af
+            Interface db7fc085f0549af
+        Port patch-br-int-to-breth0_ovn-worker
+            Interface patch-br-int-to-breth0_ovn-worker
+                type: patch
+                options: {peer=patch-breth0_ovn-worker-to-br-int}
+        Port ovn-k8s-mp0
+            Interface ovn-k8s-mp0
+                type: internal
+        Port ovn-41fdf0-0
+            Interface ovn-41fdf0-0
+                type: geneve
+                options: {csum="true", key=flow, remote_ip="172.18.0.4"}
+        Port "12bc7bb79cf122f"
+            Interface "12bc7bb79cf122f"
+        Port "46818a48aa5ca0a"
+            Interface "46818a48aa5ca0a"
+        Port ovn-80e3c0-0
+            Interface ovn-80e3c0-0
+                type: geneve
+                options: {csum="true", key=flow, remote_ip="172.18.0.3"}
+        Port "9d2813f1fbfd5f6"
+            Interface "9d2813f1fbfd5f6"
+        Port br-int
+            Interface br-int
+                type: internal
+    ovs_version: "2.15.0"

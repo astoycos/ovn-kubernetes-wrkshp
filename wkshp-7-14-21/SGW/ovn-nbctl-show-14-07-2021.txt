@@ -1,0 +1,116 @@
+switch 25e50a0d-49bc-49c2-a310-1f5db7fb5b99 (ovn-worker)
+    port local-path-storage_local-path-provisioner-78776bfc44-h68s6
+        addresses: ["0a:58:0a:f4:02:03 10.244.2.3"]
+    port kube-system_coredns-74ff55c5b-rgsfz
+        addresses: ["0a:58:0a:f4:02:04 10.244.2.4"]
+    port k8s-ovn-worker
+        addresses: ["be:bc:2f:a1:33:38 10.244.2.2"]
+    port default_server-on-ovn-worker
+        addresses: ["0a:58:0a:f4:02:06 10.244.2.6"]
+    port default_client-on-ovn-worker
+        addresses: ["0a:58:0a:f4:02:05 10.244.2.5"]
+    port stor-ovn-worker
+        type: router
+        addresses: ["0a:58:0a:f4:02:01"]
+        router-port: rtos-ovn-worker
+switch e7b5b562-d7ef-4d6a-a8b4-7a21033611f5 (ext_ovn-worker2)
+    port etor-GR_ovn-worker2
+        type: router
+        addresses: ["02:42:ac:12:00:03"]
+        router-port: rtoe-GR_ovn-worker2
+    port breth0_ovn-worker2
+        type: localnet
+        addresses: ["unknown"]
+switch 558d3ec2-ae4c-4508-ac85-e772c0753316 (ext_ovn-control-plane)
+    port breth0_ovn-control-plane
+        type: localnet
+        addresses: ["unknown"]
+    port etor-GR_ovn-control-plane
+        type: router
+        addresses: ["02:42:ac:12:00:04"]
+        router-port: rtoe-GR_ovn-control-plane
+switch ce2fd73a-7795-4d2d-b038-9095ae4eb10a (join)
+    port jtor-GR_ovn-worker2
+        type: router
+        router-port: rtoj-GR_ovn-worker2
+    port jtor-GR_ovn-worker
+        type: router
+        router-port: rtoj-GR_ovn-worker
+    port jtor-GR_ovn-control-plane
+        type: router
+        router-port: rtoj-GR_ovn-control-plane
+    port jtor-ovn_cluster_router
+        type: router
+        router-port: rtoj-ovn_cluster_router
+switch 22953d36-7cd6-4588-b6e7-e87cf244455a (ext_ovn-worker)
+    port breth0_ovn-worker
+        type: localnet
+        addresses: ["unknown"]
+    port etor-GR_ovn-worker
+        type: router
+        addresses: ["02:42:ac:12:00:02"]
+        router-port: rtoe-GR_ovn-worker
+switch 6988edef-1cdf-4fed-9515-6c929707a598 (ovn-control-plane)
+    port stor-ovn-control-plane
+        type: router
+        addresses: ["0a:58:0a:f4:01:01"]
+        router-port: rtos-ovn-control-plane
+    port k8s-ovn-control-plane
+        addresses: ["82:55:a1:f5:69:61 10.244.1.2"]
+switch 5b3fefc3-1d39-4d5d-b829-da7d438d7a53 (ovn-worker2)
+    port k8s-ovn-worker2
+        addresses: ["7a:c6:47:57:46:e3 10.244.0.2"]
+    port kube-system_coredns-74ff55c5b-cr2pg
+        addresses: ["0a:58:0a:f4:00:03 10.244.0.3"]
+    port default_server-on-ovn-worker2
+        addresses: ["0a:58:0a:f4:00:04 10.244.0.4"]
+    port stor-ovn-worker2
+        type: router
+        addresses: ["0a:58:0a:f4:00:01"]
+        router-port: rtos-ovn-worker2
+router 82acaced-b705-4ddf-89e1-47bd8a1321ac (ovn_cluster_router)
+    port rtos-ovn-worker2
+        mac: "0a:58:0a:f4:00:01"
+        networks: ["10.244.0.1/24"]
+    port rtoj-ovn_cluster_router
+        mac: "0a:58:64:40:00:01"
+        networks: ["100.64.0.1/16"]
+    port rtos-ovn-worker
+        mac: "0a:58:0a:f4:02:01"
+        networks: ["10.244.2.1/24"]
+    port rtos-ovn-control-plane
+        mac: "0a:58:0a:f4:01:01"
+        networks: ["10.244.1.1/24"]
+router c2558735-f8be-464a-8a33-764720757867 (GR_ovn-worker)
+    port rtoj-GR_ovn-worker
+        mac: "0a:58:64:40:00:04"
+        networks: ["100.64.0.4/16"]
+    port rtoe-GR_ovn-worker
+        mac: "02:42:ac:12:00:02"
+        networks: ["172.18.0.2/16"]
+    nat 0c53b025-d496-4a3c-87e7-dcb97d3d72b8
+        external ip: "172.18.0.2"
+        logical ip: "10.244.0.0/16"
+        type: "snat"
+router bb55f135-e629-4c85-a170-d70b00c6ddd3 (GR_ovn-worker2)
+    port rtoe-GR_ovn-worker2
+        mac: "02:42:ac:12:00:03"
+        networks: ["172.18.0.3/16"]
+    port rtoj-GR_ovn-worker2
+        mac: "0a:58:64:40:00:03"
+        networks: ["100.64.0.3/16"]
+    nat 2484b8e5-3180-43fc-aa3c-eab3c17d6fbb
+        external ip: "172.18.0.3"
+        logical ip: "10.244.0.0/16"
+        type: "snat"
+router 17f6ea6a-c07a-4a1d-8091-513ca5c8f1c9 (GR_ovn-control-plane)
+    port rtoj-GR_ovn-control-plane
+        mac: "0a:58:64:40:00:02"
+        networks: ["100.64.0.2/16"]
+    port rtoe-GR_ovn-control-plane
+        mac: "02:42:ac:12:00:04"
+        networks: ["172.18.0.4/16"]
+    nat 59bcfd4e-bced-46d9-b2cb-e4770896152b
+        external ip: "172.18.0.4"
+        logical ip: "10.244.0.0/16"
+        type: "snat"
