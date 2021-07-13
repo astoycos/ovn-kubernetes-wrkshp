@@ -1,0 +1,209 @@
+_uuid               : 32b3a8c0-0f75-4d87-bdff-e7c8c3a0f181
+external_ids        : {UDP_lb_gateway_router=GR_ovn-worker}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : udp
+selection_fields    : []
+vips                : {}
+
+_uuid               : a87e8100-e77c-4e87-b95f-9ff4bf5779ad
+external_ids        : {k8s-worker-lb-sctp=ovn-control-plane}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : sctp
+selection_fields    : []
+vips                : {}
+
+_uuid               : e1fdb4a2-ce36-497a-8283-56c970cedf04
+external_ids        : {TCP_lb_gateway_router=GR_ovn-control-plane}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.1:443"="169.254.169.2:6443", "172.18.0.4:30187"="10.244.2.6:80", "172.18.0.4:31881"="10.244.0.4:80"}
+
+_uuid               : fe66d962-7dd8-462a-9646-d433b7a165db
+external_ids        : {k8s-cluster-lb-tcp=yes}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {reject="true"}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.10:53"="10.244.0.3:53,10.244.2.4:53", "10.96.0.10:9153"="10.244.0.3:9153,10.244.2.4:9153", "10.96.231.241:80"="10.244.0.4:80", "10.96.84.45:80"="10.244.2.6:80"}
+
+_uuid               : 6cdeeac2-339c-47c8-861e-9a6efe356364
+external_ids        : {k8s-worker-lb-sctp=ovn-worker2}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : sctp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 30ab0bb2-bada-4393-8b4e-6329de7c002c
+external_ids        : {k8s-worker-lb-udp=ovn-worker2}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : udp
+selection_fields    : []
+vips                : {}
+
+_uuid               : a2c1b412-0a3b-49eb-b29e-3749a06b8821
+external_ids        : {k8s-worker-lb-tcp=ovn-worker}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.1:443"="172.18.0.4:6443", "172.18.0.2:30187"="10.244.2.6:80", "172.18.0.2:31881"="10.244.0.4:80"}
+
+_uuid               : d14a6904-114a-46e2-8fd9-0ce4c17520e6
+external_ids        : {TCP_lb_gateway_router=GR_ovn-worker}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.1:443"="172.18.0.4:6443", "172.18.0.2:30187"="10.244.2.6:80", "172.18.0.2:31881"="10.244.0.4:80"}
+
+_uuid               : d1f50594-721d-4418-bf7c-c1e8bc97b1cc
+external_ids        : {UDP_lb_gateway_router=GR_ovn-control-plane}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : udp
+selection_fields    : []
+vips                : {}
+
+_uuid               : a1c37f85-ce72-4374-82f7-da053342a8dd
+external_ids        : {SCTP_lb_gateway_router=GR_ovn-worker}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : sctp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 4320ab35-bfa5-4c7b-80bc-5170e7a497eb
+external_ids        : {k8s-worker-lb-tcp=ovn-worker2}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.1:443"="172.18.0.4:6443", "172.18.0.3:30187"="10.244.2.6:80", "172.18.0.3:31881"="10.244.0.4:80"}
+
+_uuid               : 8a259366-52f3-4ff0-a573-b1e6a1de1ff5
+external_ids        : {k8s-worker-lb-udp=ovn-control-plane}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : udp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 0cb5b307-80f3-4c91-854d-eae6d8d96c2d
+external_ids        : {SCTP_lb_gateway_router=GR_ovn-control-plane}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : sctp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 15f02357-f2bd-4334-9246-d3b98a8909ba
+external_ids        : {UDP_lb_gateway_router=GR_ovn-worker2}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : udp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 5a981f98-ffe4-406e-b6dc-1f85fce5c4de
+external_ids        : {k8s-cluster-lb-sctp=yes}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {reject="true"}
+protocol            : sctp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 548ccf18-dd76-4e27-b237-4fd2982061f7
+external_ids        : {TCP_lb_gateway_router=GR_ovn-worker2}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.1:443"="172.18.0.4:6443", "172.18.0.3:30187"="10.244.2.6:80", "172.18.0.3:31881"="10.244.0.4:80"}
+
+_uuid               : f3301f99-e5f2-4396-96ea-6332c411abb8
+external_ids        : {k8s-cluster-lb-udp=yes}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {reject="true"}
+protocol            : udp
+selection_fields    : []
+vips                : {"10.96.0.10:53"="10.244.0.3:53,10.244.2.4:53"}
+
+_uuid               : 3b433679-650f-437a-b05d-7965c414968a
+external_ids        : {k8s-worker-lb-udp=ovn-worker}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : udp
+selection_fields    : []
+vips                : {}
+
+_uuid               : e781d0fa-24d9-414e-ba18-1bf268dc651c
+external_ids        : {SCTP_lb_gateway_router=GR_ovn-worker2}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : sctp
+selection_fields    : []
+vips                : {}
+
+_uuid               : 1fb65ebc-258c-4576-967a-85d18b2fa6c8
+external_ids        : {k8s-worker-lb-tcp=ovn-control-plane}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : tcp
+selection_fields    : []
+vips                : {"10.96.0.1:443"="172.18.0.4:6443", "172.18.0.4:30187"="10.244.2.6:80", "172.18.0.4:31881"="10.244.0.4:80"}
+
+_uuid               : b9b1476d-36c0-4b33-8103-e06ac17c7db1
+external_ids        : {k8s-worker-lb-sctp=ovn-worker}
+health_check        : []
+ip_port_mappings    : {}
+name                : ""
+options             : {}
+protocol            : sctp
+selection_fields    : []
+vips                : {}

@@ -1,0 +1,31 @@
+OFPST_PORT_DESC reply (xid=0x2):
+ 1(ovn-1954e8-0): addr:4a:f0:e7:95:7e:52
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 2(ovn-41fdf0-0): addr:1e:a6:a1:ff:0d:36
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 3(ovn-k8s-mp0): addr:7a:c6:47:57:46:e3
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 4(patch-br-int-to): addr:aa:68:2e:4b:57:1d
+     config:     0
+     state:      0
+     speed: 0 Mbps now, 0 Mbps max
+ 5(06854b74ac8a3cb): addr:ee:42:88:ab:85:6c
+     config:     0
+     state:      0
+     current:    10GB-FD COPPER
+     speed: 10000 Mbps now, 0 Mbps max
+ 6(02f47f13cff4d45): addr:de:7f:38:97:c0:9c
+     config:     0
+     state:      0
+     current:    10GB-FD COPPER
+     speed: 10000 Mbps now, 0 Mbps max
+ LOCAL(br-int): addr:ae:c1:28:41:01:a9
+     config:     PORT_DOWN
+     state:      LINK_DOWN
+     speed: 0 Mbps now, 0 Mbps max

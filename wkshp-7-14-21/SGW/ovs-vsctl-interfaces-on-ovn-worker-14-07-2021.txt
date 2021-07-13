@@ -1,0 +1,419 @@
+_uuid               : 1e4de502-14fa-4732-b29c-7c2a48a79f2f
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {}
+ifindex             : 0
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : []
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "82:8c:4e:a1:4d:69"
+mtu                 : []
+mtu_request         : []
+name                : patch-br-int-to-breth0_ovn-worker
+ofport              : 4
+ofport_request      : []
+options             : {peer=patch-breth0_ovn-worker-to-br-int}
+other_config        : {}
+statistics          : {rx_bytes=50221692, rx_packets=186406, tx_bytes=15349575, tx_packets=89016}
+status              : {}
+type                : patch
+
+_uuid               : 6b636033-5f00-4294-8bbe-5a22cbf975db
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : full
+error               : []
+external_ids        : {attached_mac="0a:58:0a:f4:02:05", iface-id=default_client-on-ovn-worker, ip_addresses="10.244.2.5/24", ovn-installed="true", sandbox="12bc7bb79cf122f81e5e41e16b445fb42d12acb9b1b68e57671db2e4b27e0f2d"}
+ifindex             : 9
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : 10000000000
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "36:59:45:42:cb:02"
+mtu                 : 1400
+mtu_request         : []
+name                : "12bc7bb79cf122f"
+ofport              : 7
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=6549, rx_crc_err=0, rx_dropped=0, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=82, tx_bytes=31866, tx_dropped=0, tx_errors=0, tx_packets=56}
+status              : {driver_name=veth, driver_version="1.0", firmware_version=""}
+type                : ""
+
+_uuid               : e8a173d3-9691-4b07-aa73-8e266a676dd1
+admin_state         : down
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {}
+ifindex             : 3
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : []
+link_state          : down
+lldp                : {}
+mac                 : []
+mac_in_use          : "0a:9a:82:45:2a:dc"
+mtu                 : 1400
+mtu_request         : []
+name                : br-int
+ofport              : 65534
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=0, rx_crc_err=0, rx_dropped=0, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=0, tx_bytes=0, tx_dropped=0, tx_errors=0, tx_packets=0}
+status              : {driver_name=openvswitch}
+type                : internal
+
+_uuid               : 8d2f9a8b-a1b9-4995-a85c-9a6c3949ba44
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : full
+error               : []
+external_ids        : {attached_mac="0a:58:0a:f4:02:03", iface-id=local-path-storage_local-path-provisioner-78776bfc44-h68s6, ip_addresses="10.244.2.3/24", ovn-installed="true", sandbox=db7fc085f0549af5db755a8eaf91ec28f7030467a2d061120f60e261c2eb1721}
+ifindex             : 8
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : 10000000000
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "7a:dc:bb:3b:dd:00"
+mtu                 : 1400
+mtu_request         : []
+name                : db7fc085f0549af
+ofport              : 6
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=14139581, rx_crc_err=0, rx_dropped=1, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=71097, tx_bytes=22851446, tx_dropped=0, tx_errors=0, tx_packets=70314}
+status              : {driver_name=veth, driver_version="1.0", firmware_version=""}
+type                : ""
+
+_uuid               : 7d8f0cf3-7dc0-4cfd-aa3b-e3c1d12762e4
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {}
+ifindex             : 4
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : []
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "d6:36:86:1f:59:f5"
+mtu                 : []
+mtu_request         : []
+name                : ovn-80e3c0-0
+ofport              : 1
+ofport_request      : []
+options             : {csum="true", key=flow, remote_ip="172.18.0.3"}
+other_config        : {}
+statistics          : {rx_bytes=10082, rx_packets=15, tx_bytes=1473, tx_packets=18}
+status              : {tunnel_egress_iface=breth0, tunnel_egress_iface_carrier=up}
+type                : geneve
+
+_uuid               : c1b52eec-4903-4036-808d-dd11fe14fde3
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {}
+ifindex             : 4
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : []
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "5e:b6:ec:eb:0e:31"
+mtu                 : []
+mtu_request         : []
+name                : ovn-41fdf0-0
+ofport              : 2
+ofport_request      : []
+options             : {csum="true", key=flow, remote_ip="172.18.0.4"}
+other_config        : {}
+statistics          : {rx_bytes=0, rx_packets=0, tx_bytes=0, tx_packets=0}
+status              : {tunnel_egress_iface=breth0, tunnel_egress_iface_carrier=up}
+type                : geneve
+
+_uuid               : 15fd6dac-e945-42e3-b30d-0a9682e2a32d
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {}
+ifindex             : 0
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : []
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "52:16:ad:eb:83:6e"
+mtu                 : []
+mtu_request         : []
+name                : patch-breth0_ovn-worker-to-br-int
+ofport              : 2
+ofport_request      : []
+options             : {peer=patch-br-int-to-breth0_ovn-worker}
+other_config        : {}
+statistics          : {rx_bytes=15349575, rx_packets=89016, tx_bytes=50221692, tx_packets=186406}
+status              : {}
+type                : patch
+
+_uuid               : d5e76444-5426-441f-ac81-9d85db9def8a
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : full
+error               : []
+external_ids        : {attached_mac="0a:58:0a:f4:02:06", iface-id=default_server-on-ovn-worker, ip_addresses="10.244.2.6/24", ovn-installed="true", sandbox="9d2813f1fbfd5f6f379354ef3d0b1b7e7aa11c4c632a7eb14ecb56b443ec455f"}
+ifindex             : 10
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : 10000000000
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "ae:6a:21:7a:76:a3"
+mtu                 : 1400
+mtu_request         : []
+name                : "9d2813f1fbfd5f6"
+ofport              : 8
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=1516, rx_crc_err=0, rx_dropped=1, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=20, tx_bytes=788, tx_dropped=0, tx_errors=0, tx_packets=8}
+status              : {driver_name=veth, driver_version="1.0", firmware_version=""}
+type                : ""
+
+_uuid               : c8072fc4-27ec-4ded-949d-d817f4dca60b
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : full
+error               : []
+external_ids        : {attached_mac="0a:58:0a:f4:02:04", iface-id=kube-system_coredns-74ff55c5b-rgsfz, ip_addresses="10.244.2.4/24", ovn-installed="true", sandbox="46818a48aa5ca0acce45418449456264c9c1cef362ea6606ab034731a89b66a5"}
+ifindex             : 7
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 2
+link_speed          : 10000000000
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "b2:16:6d:50:4f:9b"
+mtu                 : 1400
+mtu_request         : []
+name                : "46818a48aa5ca0a"
+ofport              : 5
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=3120731, rx_crc_err=0, rx_dropped=1, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=38038, tx_bytes=8788019, tx_dropped=0, tx_errors=0, tx_packets=33485}
+status              : {driver_name=veth, driver_version="1.0", firmware_version=""}
+type                : ""
+
+_uuid               : bf1644cd-d93a-419a-ac55-1061067308ba
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : full
+error               : []
+external_ids        : {}
+ifindex             : 168
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 0
+link_speed          : 10000000000
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "02:42:ac:12:00:02"
+mtu                 : 1500
+mtu_request         : []
+name                : eth0
+ofport              : 1
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=882380900, rx_crc_err=0, rx_dropped=0, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=227151, tx_bytes=24865918, tx_dropped=0, tx_errors=0, tx_packets=182842}
+status              : {driver_name=veth, driver_version="1.0", firmware_version=""}
+type                : ""
+
+_uuid               : 4674e1b7-fab8-4325-bdb2-ef5b7ba8b665
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {iface-id=k8s-ovn-worker, ovn-installed="true"}
+ifindex             : 5
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 1
+link_speed          : []
+link_state          : up
+lldp                : {}
+mac                 : "be:bc:2f:a1:33:38"
+mac_in_use          : "be:bc:2f:a1:33:38"
+mtu                 : 1400
+mtu_request         : 1400
+name                : ovn-k8s-mp0
+ofport              : 3
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=1630477, rx_crc_err=0, rx_dropped=0, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=20147, tx_bytes=1876026, tx_dropped=0, tx_errors=0, tx_packets=21377}
+status              : {driver_name=openvswitch}
+type                : internal
+
+_uuid               : 153b8e6f-0f8d-4f4d-9ec9-b673fc1ffda5
+admin_state         : up
+bfd                 : {}
+bfd_status          : {}
+cfm_fault           : []
+cfm_fault_status    : []
+cfm_flap_count      : []
+cfm_health          : []
+cfm_mpid            : []
+cfm_remote_mpids    : []
+cfm_remote_opstate  : []
+duplex              : []
+error               : []
+external_ids        : {}
+ifindex             : 6
+ingress_policing_burst: 0
+ingress_policing_rate: 0
+lacp_current        : []
+link_resets         : 1
+link_speed          : []
+link_state          : up
+lldp                : {}
+mac                 : []
+mac_in_use          : "02:42:ac:12:00:02"
+mtu                 : 1500
+mtu_request         : []
+name                : breth0
+ofport              : 65534
+ofport_request      : []
+options             : {}
+other_config        : {}
+statistics          : {collisions=0, rx_bytes=849935991, rx_crc_err=0, rx_dropped=2, rx_errors=0, rx_frame_err=0, rx_missed_errors=0, rx_over_err=0, rx_packets=144069, tx_bytes=9406566, tx_dropped=0, tx_errors=0, tx_packets=93037}
+status              : {driver_name=openvswitch}
+type                : internal
